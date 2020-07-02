@@ -1,0 +1,9 @@
+U:\documents\coding\c#\tsearch_new\TSearch_v0.22\TSearch_v0.22\TSearch_v0.22\obj\Debug\TSearch_v0.22.csprojResolveAssemblyReference.cache
+U:\documents\coding\c#\tsearch_new\TSearch_v0.22\TSearch_v0.22\TSearch_v0.22\obj\Debug\TSearch_v0._1.MainForm.resources
+U:\documents\coding\c#\tsearch_new\TSearch_v0.22\TSearch_v0.22\TSearch_v0.22\obj\Debug\TSearch_v0.22.csproj.GenerateResource.Cache
+U:\documents\coding\c#\tsearch_new\TSearch_v0.22\TSearch_v0.22\TSearch_v0.22\bin\Debug\Cassia.dll
+U:\documents\coding\c#\tsearch_new\TSearch_v0.22\TSearch_v0.22\TSearch_v0.22\bin\Debug\TSearch_v0.22.exe.config
+U:\documents\coding\c#\tsearch_new\TSearch_v0.22\TSearch_v0.22\TSearch_v0.22\bin\Debug\TSearch_v0.22.exe
+U:\documents\coding\c#\tsearch_new\TSearch_v0.22\TSearch_v0.22\TSearch_v0.22\bin\Debug\TSearch_v0.22.pdb
+U:\documents\coding\c#\tsearch_new\TSearch_v0.22\TSearch_v0.22\TSearch_v0.22\obj\Debug\TSearch_v0.22.exe
+U:\documents\coding\c#\tsearch_new\TSearch_v0.22\TSearch_v0.22\TSearch_v0.22\obj\Debug\TSearch_v0.22.pdb
