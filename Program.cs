@@ -7,6 +7,7 @@
  * Для изменения этого шаблона используйте меню "Инструменты | Параметры | Кодирование | Стандартные заголовки".
  */
 using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace TSearch_v0._1
@@ -16,6 +17,7 @@ namespace TSearch_v0._1
 	/// </summary>
 	internal sealed class Program
 	{
+		public static MainForm mainForm;
 		/// <summary>
 		/// Program entry point.
 		/// </summary>
@@ -24,7 +26,8 @@ namespace TSearch_v0._1
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new MainForm());
+			Application.Run(mainForm = new MainForm());
+
 		}
 		
 	}
