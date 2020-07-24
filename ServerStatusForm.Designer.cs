@@ -65,7 +65,7 @@ namespace TSearch_v0._1
 			| System.Windows.Forms.AnchorStyles.Right)));
 					this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 					dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-					dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+					dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
 					dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 					dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
 					dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -84,7 +84,7 @@ namespace TSearch_v0._1
 					this.dataGridView1.Name = "dataGridView1";
 					this.dataGridView1.ReadOnly = true;
 					this.dataGridView1.RowHeadersVisible = false;
-					this.dataGridView1.Size = new System.Drawing.Size(663, 261);
+					this.dataGridView1.Size = new System.Drawing.Size(665, 265);
 					this.dataGridView1.TabIndex = 0;
 					// 
 					// ServerName
@@ -147,13 +147,15 @@ namespace TSearch_v0._1
 					this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 					this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 					this.AutoScroll = true;
-					this.ClientSize = new System.Drawing.Size(667, 265);
+					this.ClientSize = new System.Drawing.Size(666, 267);
 					this.Controls.Add(this.dataGridView1);
-					this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
 					this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+					this.MaximizeBox = false;
+					this.MinimizeBox = false;
 					this.Name = "ServerStatusForm";
 					this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 					this.Text = "Статус серверов";
+					this.Deactivate += new System.EventHandler(this.ServerStatusFormDeactivate);
 					((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 					this.ResumeLayout(false);
 

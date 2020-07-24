@@ -1,0 +1,357 @@
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997
+WTSServer
+getSessionList
+System.ComponentModel.Win32Exception (0x80004005): Отказано в доступе
+   в Cassia.Impl.NativeMethodsHelper.GetSessionInfos(ITerminalServerHandle server)
+   в Cassia.Impl.TerminalServer.GetSessions()
+   в TSearch_v0._1.WTSServer.getSessionList()
+C:\Users\nkarpov\AppData\Roaming\NKarpov\TSearch\1.0.7509.29997

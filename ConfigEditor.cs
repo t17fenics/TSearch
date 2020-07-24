@@ -8,6 +8,7 @@
  */
 using System;
 using System.Diagnostics;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace TSearch_v0._1
@@ -17,14 +18,24 @@ namespace TSearch_v0._1
 	/// </summary>
 	public class ConfigEditor
 	{
-				Process newProcess;
 		public ConfigEditor()
 		{
 		}
+		
+		//
 		public void configEdit()
 		{
-		string path = Application.StartupPath+@"\settings.ini";
-		newProcess = Process.Start(path);
+			try
+			{
+			string path = Application.StartupPath+@"\srvlst.ini";
+			Process newProcess = Process.Start(path);
+			}
+			catch(Exception ex)
+			{
+				Debug.WriteLine(MethodBase.GetCurrentMethod().ReflectedType.Name + MethodBase.GetCurrentMethod().Name);
+				Debug.WriteLine(ex.Message);
+				//log.appendLog(MethodBase.GetCurrentMethod().ReflectedType.Name + "\n" + MethodBase.GetCurrentMethod().Name + "\n" + ex.Message + "\n" + Application.UserAppDataPath);
+			}
 		}
 	}
 }

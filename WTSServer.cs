@@ -12,6 +12,7 @@ using System.Diagnostics;
 using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Threading;
+using System.Windows.Forms;
 using Cassia;
 using System.Collections.Generic;
 
@@ -30,115 +31,42 @@ namespace TSearch_v0._1
 		public string lastCheck;
 		//Создание листа, в который сохраняются сеансы, полученные в этом методе
 		public 	List<ITerminalServicesSession> serverSessionList = new List<ITerminalServicesSession>{};
+		Log log;
 		
-		public WTSServer()
+		public WTSServer(Log logMainForm)
 		{
+			log = logMainForm;
 		}
 		
-		//Возвращает список сеансов с сервера(имя сервера в качестве параметра)
-		public void getSessionList()
+		//Функция проверяет текущий хост. Если хост доступен и проходит по типу и задержке между сканированиями с него запрашивается список сессий и добавляется в общий лист сессий.
+		public void checkServerStatus()
 		{
-			Thread myThread = new Thread(getSessionListIn);
-			myThread.Start();
-		}
-		public void getSessionList1()
-		{
-			//Debug.WriteLine("Получаем сессии с сервера " + serverName);
-			IList<ITerminalServicesSession> serverSession;
-			
-			int countSession = 0;
-			serverSessionList.Clear();
-			
-			//Далее идет код для подключения к серверу 
-			ITerminalServicesManager manager = new TerminalServicesManager();
-			using (ITerminalServer server = manager.GetRemoteServer(serverName))
+			long diffTime = 0;
+			pingServer();
+			if((serverStatus == "Success" || serverStatus == null))
 			{
-				server.Open();
-				// Перебираем все сеансы на сервере(Почему то выполняется в try)
-				try
+				if(serverStatus =="Success" && lastCheck != "retry")
 				{
-
-					serverSession = server.GetSessions();
+					DateTime old = Convert.ToDateTime(lastCheck);
+					diffTime = (long)(DateTime.Now - old).TotalSeconds;
 				}
-				catch(Exception ex)
+				if((serverStatus =="Success" && serverType == "terminal" && diffTime >= 3) || (serverStatus =="Success" && serverType == "pc" && diffTime >= 5)) //&& server.lastCheck != null)
 				{
-					//Debug.WriteLine(ex.Message);
-					serverStatus = ex.Message;
-					serverSession = null;
+					lastCheck = "retry";
+					getSessionList();
 				}
-				server.Close();
-				if(serverSession != null)
-				{
-				foreach (ITerminalServicesSession session in serverSession)
-				{
-					//server.
-					//Фильтруем системный сеанс с Id 0. Отбираем сеансы в статусе Active или в статусе Disconnected, но не с пустым именем
-					if(session.SessionId != 0 && ((session.ConnectionState == ConnectionState.Active) || (session.ConnectionState == ConnectionState.Disconnected && session.UserName != "")))
-					{
-						serverSessionList.Add(session);
-						countSession++;
-						
-					}
-				}
-				}
-
 			}
-			sessionCount = countSession;
-			lastCheck = DateTime.Now.ToString();
-			//return sessionCount;
 		}
-		public void getSessionListIn()
-		{
-			IList<ITerminalServicesSession> serverSession;
-			
-			int countSession = 0;
-			serverSessionList.Clear();
-			
-			//Далее идет код для подключения к серверу 
-			ITerminalServicesManager manager = new TerminalServicesManager();
-			using (ITerminalServer server = manager.GetRemoteServer(serverName))
-			{
-				server.Open();
-				// Перебираем все сеансы на сервере(Почему то выполняется в try)
-				try
-				{
-
-					serverSession = server.GetSessions();
-				}
-				catch(Exception ex)
-				{
-					//Debug.WriteLine(ex.Message);
-					serverStatus = ex.Message;
-					serverSession = null;
-				}
-				if(serverSession != null)
-				{
-				foreach (ITerminalServicesSession session in serverSession)
-				{
-					//Фильтруем системный сеанс с Id 0. Отбираем сеансы в статусе Active или в статусе Disconnected, но не с пустым именем
-					if(session.SessionId != 0 && ((session.ConnectionState == Cassia.ConnectionState.Active) || (session.ConnectionState == Cassia.ConnectionState.Disconnected && session.UserName != "")))
-					{
-						serverSessionList.Add(session);
-						countSession++;
-						
-					}
-				}
-				}
-
-			}
-			sessionCount = countSession;
-			//return sessionCount;
-		}
+		
 		//Проверка доступности серера с помощью ping
-		public string checkServerStatus()
+		public void pingServer()
 		{
-			string status;
 			Ping ping = new Ping();
             PingReply pingReply = null;
             try
 			{
 				pingReply = ping.Send(serverName,150);
-				status = pingReply.Status.ToString();
+				serverStatus = pingReply.Status.ToString();
 			}
 			catch (Exception ex)
 			{
@@ -146,60 +74,66 @@ namespace TSearch_v0._1
 				{
 					Debug.WriteLine(MethodBase.GetCurrentMethod().Name);
 					Debug.WriteLine(ex.InnerException.Message);
+					log .appendLog(MethodBase.GetCurrentMethod().ReflectedType.Name + "\n" + MethodBase.GetCurrentMethod().Name + "\n" + ex.Message + "\n" + Application.UserAppDataPath);
 				}
-					status = ex.InnerException.Message;
-				
+				serverStatus = ex.InnerException.Message;
 			}
-			/*if(status == "Success" || status == "TimedOut" ||  status == "Этот хост неизвестен")
-			{
-
-			} else {
-							Debug.WriteLine("status" + status);
-			}*/
-			
-			serverStatus=status;
-			return status;
-
 		}
 		
+		//Возвращает список сеансов с сервера(имя сервера в качестве параметра)
+		public void getSessionList()
+		{
+			IList<ITerminalServicesSession> serverSession;
+			int countSession = 0;
+			
+			serverSessionList.Clear();
+			
+			//Далее идет код для подключения к серверу 
+			ITerminalServicesManager manager = new TerminalServicesManager();
+			using (ITerminalServer server = manager.GetRemoteServer(serverName))
+			{
+				server.Open();
+				
+				// Перебираем все сеансы на сервере.
+				try
+				{
+					serverSession = server.GetSessions();
+				}
+				catch(Exception ex)
+				{
+					serverStatus = ex.Message;
+					serverSession = null;
+					log.appendLog(MethodBase.GetCurrentMethod().ReflectedType.Name + "\n" + MethodBase.GetCurrentMethod().Name + "\n" + ex + "\n" + Application.UserAppDataPath);
+				}
+				server.Close();
+				if(serverSession != null)
+				{
+					foreach (ITerminalServicesSession session in serverSession)
+					{
+						//Фильтруем системный сеанс с Id 0. Отбираем сеансы в статусе Active или в статусе Disconnected, но не с пустым именем
+						if(session.SessionId != 0 && ((session.ConnectionState == ConnectionState.Active) || (session.ConnectionState == ConnectionState.Disconnected && session.UserName != "")))
+						{
+							serverSessionList.Add(session);
+							countSession++;
+						}
+					}
+				}
+			}
+			sessionCount = countSession;
+			lastCheck = DateTime.Now.ToString();
+		}
+		
+		//Поиск сессии в serverSessionList по ммени
 		public bool findSession(string userName)
 		{
 			foreach(ITerminalServicesSession session in serverSessionList)
 			{
-				
 				if(session.UserName.ToLower() == userName.ToLower())
 				{
-					
 					return true;
 				} 
 			}
-			//Debug.WriteLine("Не нашли " + userName + " в " + serverName);
 			return false;
-		}
-		
-		public bool findServer(string serverName)
-		{
-			foreach(ITerminalServicesSession session in serverSessionList)
-			{
-				
-				if(session.Server.ServerName == serverName)
-				{
-					
-					return true;
-				} 
-			}
-			//Debug.WriteLine("Не нашли " + userName + " в " + serverName);
-			return false;
-		}
-		
-		
-		//Получение всех сеансов из serverSessionList
-		public void printAllSession()
-		{
-			foreach(ITerminalServicesSession session in serverSessionList)
-			{
-				Debug.WriteLine(session.SessionId + " " + session.UserName);
-			}
 		}
 	}
 }

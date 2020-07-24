@@ -17,6 +17,7 @@ namespace TSearch_v0._1
 	/// </summary>
 	public partial class AboutForm : Form
 	{
+		public bool formStarted = false;
 		public AboutForm()
 		{
 			//
@@ -28,9 +29,14 @@ namespace TSearch_v0._1
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-		void Label1Click(object sender, EventArgs e)
+		//Открытие ссылки при щелчке
+		void LinkLabel1Click(object sender, EventArgs e)
 		{
-	
+			System.Diagnostics.Process.Start("https://github.com/danports/cassia");
+		}
+		void AboutFormDeactivate(object sender, EventArgs e)
+		{
+			formStarted = false;
 		}
 	}
 }

@@ -18,6 +18,7 @@ namespace TSearch_v0._1
 		public ConfigLine()
 		{
 		}
+		
 		public string serverName;
 		public string serverType;
 	}

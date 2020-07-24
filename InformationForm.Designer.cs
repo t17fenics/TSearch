@@ -56,7 +56,6 @@ namespace TSearch_v0._1
 			this.textBox1.TabIndex = 0;
 			this.textBox1.TabStop = false;
 			this.textBox1.Text = resources.GetString("textBox1.Text");
-			this.textBox1.TextChanged += new System.EventHandler(this.TextBox1TextChanged);
 			// 
 			// InformationForm
 			// 
@@ -64,10 +63,14 @@ namespace TSearch_v0._1
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(659, 265);
 			this.Controls.Add(this.textBox1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "InformationForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Информация";
+			this.Deactivate += new System.EventHandler(this.InformationFormDeactivate);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

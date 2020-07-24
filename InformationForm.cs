@@ -17,6 +17,7 @@ namespace TSearch_v0._1
 	/// </summary>
 	public partial class InformationForm : Form
 	{
+		public bool formStarted = false;
 		public InformationForm()
 		{
 			//
@@ -28,9 +29,9 @@ namespace TSearch_v0._1
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
-		void TextBox1TextChanged(object sender, EventArgs e)
+		void InformationFormDeactivate(object sender, EventArgs e)
 		{
-	
+			formStarted = false;
 		}
 	}
 }

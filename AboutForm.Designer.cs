@@ -58,15 +58,18 @@ namespace TSearch_v0._1
 			this.label1.TabIndex = 0;
 			this.label1.Text = "TSearch version 0.3 final 07.2020\r\n\r\nCopyright © NKarpov 2016-2020\r\n\r\ne-mail: t17" +
 	"fenics@gmail.com";
-			this.label1.Click += new System.EventHandler(this.Label1Click);
 			// 
 			// textBox1
 			// 
 			this.textBox1.Location = new System.Drawing.Point(12, 148);
 			this.textBox1.Multiline = true;
 			this.textBox1.Name = "textBox1";
+			this.textBox1.ReadOnly = true;
+			this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
 			this.textBox1.Size = new System.Drawing.Size(407, 115);
 			this.textBox1.TabIndex = 1;
+			this.textBox1.TabStop = false;
+			this.textBox1.Text = resources.GetString("textBox1.Text");
 			// 
 			// label2
 			// 
@@ -96,6 +99,7 @@ namespace TSearch_v0._1
 			this.linkLabel1.TabIndex = 4;
 			this.linkLabel1.TabStop = true;
 			this.linkLabel1.Text = "https://github.com/danports/cassia";
+			this.linkLabel1.Click += new System.EventHandler(this.LinkLabel1Click);
 			// 
 			// AboutForm
 			// 
@@ -107,10 +111,14 @@ namespace TSearch_v0._1
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.label1);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "AboutForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "О программе";
+			this.Deactivate += new System.EventHandler(this.AboutFormDeactivate);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();

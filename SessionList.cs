@@ -9,8 +9,10 @@
 using System;
 using System.Collections;
 using System.Diagnostics;
+using System.IO;
 using System.Net;
 using System.Reflection;
+using System.Windows.Forms;
 using Cassia;
 
 namespace TSearch_v0._1
@@ -21,21 +23,22 @@ namespace TSearch_v0._1
 	public class SessionList
 	{
 		public ArrayList allSessionList = new ArrayList();
-		
-		public bool listLocked;
+		//MainForm form1 = this.
+		//main
+		Log log;
 
-		public SessionList()
+		public SessionList(Log logMainForm)
 		{
+			log = logMainForm;
 		}
 		
 		// Функция заполняет лист сессиями
 		public void fillingSessionList(ArrayList serverList)
 		{
-			listLocked = true;
+			//listLocked = true;
 			
 			foreach(WTSServer server in serverList)
 			{
-				//Воткнуть сюда try
 				try
 				{
 					foreach(ITerminalServicesSession session in server.serverSessionList)
@@ -61,12 +64,11 @@ namespace TSearch_v0._1
 				}
 				catch(Exception ex)
 				{
-					Debug.WriteLine(MethodBase.GetCurrentMethod().ReflectedType.Name);
+					Debug.WriteLine(MethodBase.GetCurrentMethod().ReflectedType.Name + " " + MethodBase.GetCurrentMethod().Name);
 					Debug.WriteLine(ex.Message);
+					log.appendLog(MethodBase.GetCurrentMethod().ReflectedType.Name + "\n" + MethodBase.GetCurrentMethod().Name + "\n" + ex.Message + "\n" + Application.UserAppDataPath);
 				}
 			}
-
-			listLocked = false;
 		}
 		
 		//Функция поиска сессии по имени пользователя и имени сервера
@@ -82,27 +84,29 @@ namespace TSearch_v0._1
 			return -1;
 		}
 		
-		//Функция удаляющая строки из allSessionList
-		public UserSession setServerDeleted(WTSServer server)
+		//Функция помечающая deleted строки из allSessionList
+		public void serachDeletedSession(WTSServer server)
 		{
-
-			//Получаем нужную userSession с заданного сервера
-			UserSession userSession = serachWTSSession(server);
-			//Если получено какое то значенеи
-			if(userSession != null) 
+			try
 			{
-				Debug.WriteLine("Удаляем " + userSession.userName + " с сервера " + server.serverName);
-				//удаляем эту строку из allSessionList
-				//Debug.WriteLine("Удаляем из sessionList");
-				//allSessionList.Remove(userSession);
-				userSession.deleted = "deleted";
-
+				foreach(UserSession session in allSessionList)
+				{
+					if(session.serverName == server.serverName && server.serverSessionList.Count != 0 && !server.findSession(session.userName))
+					{
+							session.deleted = "deleted";
+					}
+				}
 			}
-			return userSession;
+			catch(Exception ex)
+			{
+				Debug.WriteLine(MethodBase.GetCurrentMethod().ReflectedType.Name  + " " + MethodBase.GetCurrentMethod().Name);
+				Debug.WriteLine(ex.Message);
+				log.appendLog(MethodBase.GetCurrentMethod().ReflectedType.Name + "\n" + MethodBase.GetCurrentMethod().Name + "\n" + ex.Message + "\n" + Application.UserAppDataPath);
+			}
 		}
-		
+
 		//Функция удаляющая строки из allSessionList
-		public void removeSession()
+		public void removeDeletedSession()
 		{
 			ArrayList indexList = new ArrayList();
 			foreach(UserSession session in allSessionList)
@@ -110,21 +114,16 @@ namespace TSearch_v0._1
 				if(session.deleted == "deleted")
 				{
 					indexList.Add(allSessionList.IndexOf(session));
-					//Debug.WriteLine("добавляем " + allSessionList.IndexOf(session));
 				}
 			}
 			indexList.Reverse();
 			foreach(int i in indexList)
 			{
-				//Debug.WriteLine(allSessionList.Count);
 				allSessionList.RemoveAt(i);
-				//Debug.WriteLine("удаляем " + i);
-				//Debug.WriteLine(allSessionList.Count);
-
 			}
-
-			
-		}	
+		}
+		
+		//удаление всех сеансов удаленного сервера из листа
 		public void removeAllServerSession(string serverName)
 		{
 			ArrayList indexList = new ArrayList();
@@ -138,37 +137,12 @@ namespace TSearch_v0._1
 			indexList.Reverse();
 			foreach(int i in indexList)
 			{
-				Debug.WriteLine(allSessionList.Count);
-				Debug.WriteLine("Удаляем " + i);
 				allSessionList.RemoveAt(i);
 			}
 		}
 		
-		public UserSession serachWTSSession(WTSServer server)
-		{
-
-			try
-			{
-			foreach(UserSession session in allSessionList)
-			{
-				if(session.serverName == server.serverName)
-				{
-					if(!server.findSession(session.userName))
-					{
-						return session;
-					}
-				}
-				
-			}
-			}
-			catch(Exception ex)
-			{
-				Debug.WriteLine(MethodBase.GetCurrentMethod().ReflectedType.Name);
-				Debug.WriteLine(ex.Message);
-			}
-			return null;
-
+		public static void Log(string message) {
+ 			File.AppendAllText(Application.StartupPath+@"\log.txt", message+"\n");
 		}
-
 	}
 }

@@ -18,8 +18,11 @@ namespace TSearch_v0._1
 	{
 		public ArrayList serverList = new ArrayList();
 
-		public ServerList()
+		Log log;
+		
+		public ServerList(Log logMainForm)
 		{
+			log = logMainForm;
 		}
 		
 		//Создаем serverList из configList
@@ -28,18 +31,19 @@ namespace TSearch_v0._1
 			serverList.Clear();
 			foreach(ConfigLine line in configList)
 			{
-				WTSServer server = new WTSServer();
+				WTSServer server = new WTSServer(log);
 				server.serverName = line.serverName;
 				server.serverType = line.serverType;
 				serverList.Add(server);
 			}
 		}
+		
+		//Поиск сервера в serverList, возвращает индекс или -1 если ничего не найдено
 		public int searchWTSbyName(string serverName)
 		{
 			foreach(WTSServer server in serverList)
 			{
 				if(server.serverName == serverName)
-
 				{
 					return serverList.IndexOf(server);
 				}

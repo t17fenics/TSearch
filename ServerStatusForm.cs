@@ -20,6 +20,7 @@ namespace TSearch_v0._1
 	public partial class ServerStatusForm : Form
 	{
 		public ServerBase serverBase;
+		public bool formStarted = false;
 		public ServerStatusForm()
 		{
 			//
@@ -28,20 +29,15 @@ namespace TSearch_v0._1
 			InitializeComponent();
 			//Включение двойной буфферизации
 			typeof(DataGridView).InvokeMember("DoubleBuffered", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.SetProperty, null, dataGridView1, new object[] { true });
-			//this.StartPosition = FormStartPosition.CenterScreen;
-			//Debug.WriteLine(Location.X.ToString());
-			//Debug.WriteLine(Location.Y.ToString());
-			////ServerStatusForm frm=new ServerStatusForm();
-
-			//dataGridView1.DataSource = serverBase.serverListDB;
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
-
 		}
+		
 		public void refresh()
 		{
 			dataGridView1.DataSource = serverBase.serverListDB;
+		}
+		void ServerStatusFormDeactivate(object sender, EventArgs e)
+		{
+			formStarted = false;
 		}
 	}
 }
